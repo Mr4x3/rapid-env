@@ -16,7 +16,7 @@ alias b4ir='~/Documents/schoolsmart/manage.py runserver 8002'
 cd ~/Documents
 
 ################Exports####################
-today=$(date +"%b-%d-%Y")
+today=$(date +"%b-%d-%Y [%H:%M:%S]")
 export GOROOT=$HOME/Other/go
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/Other/bin
