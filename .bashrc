@@ -9,17 +9,14 @@ alias spv='source ~/Documents/env_sportsvitae/bin/activate'
 alias spvr='~/Documents/sportsvitae/manage.py runserver 8001'
 alias ss='source ~/Documents/env_schoolsmart/bin/activate'
 alias ssr='~/Documents/schoolsmart/manage.py runserver 8002'
-alias b4i='source ~/Documents/env_schoolsmart/bin/activate'
-alias b4ir='~/Documents/schoolsmart/manage.py runserver 8002'
+alias b4i='source env_buy4industry/bin/activate'
+alias b4ir='~/Documents/buy4industry/manage.py runserver 8003'
 
 ################Commands###################
 cd ~/Documents
 
 ################Exports####################
 today=$(date +"%b-%d-%Y [%H:%M:%S]")
-export GOROOT=$HOME/Other/go
-export PATH=$PATH:$GOROOT/bin
-export GOPATH=$HOME/Other/bin
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
