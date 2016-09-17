@@ -9,7 +9,7 @@ alias spv='source ~/Documents/env_sportsvitae/bin/activate'
 alias spvr='~/Documents/sportsvitae/manage.py runserver 8001'
 alias ss='source ~/Documents/env_schoolsmart/bin/activate'
 alias ssr='~/Documents/schoolsmart/manage.py runserver 8002'
-alias b4i='source env_buy4industry/bin/activate'
+alias b4i='source ~/Documents/env_buy4industry/bin/activate'
 alias b4ir='~/Documents/buy4industry/manage.py runserver 8003'
 
 ################Commands###################

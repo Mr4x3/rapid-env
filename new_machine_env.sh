@@ -11,4 +11,4 @@ sudo apt install glances
 sudo apt install htop
 sudo apt install chromium-browser
 sudo apt install python3-pip
-
+sudo apt install tree
