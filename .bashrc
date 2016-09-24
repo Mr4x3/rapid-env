@@ -12,12 +12,20 @@ alias ssr='~/Documents/schoolsmart/manage.py runserver 8002'
 alias b4i='source ~/Documents/env_buy4industry/bin/activate'
 alias b4ir='~/Documents/buy4industry/manage.py runserver 8003'
 
+alias install='sudo apt-get install'
+alias remove='sudo apt-get remove'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get update && sudo apt-get upgrade'
 ################Commands###################
 cd ~/Documents
 
 ################Exports####################
 today=$(date +"%b-%d-%Y [%H:%M:%S]")
+#################Best Prompt Yet############
+PS1="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[0;33m\]\u\[\033[0;37m\]@\[\033[0;96m\]\h'; fi)\[\033[0;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;37m\]]\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"
 
+
+#_______________________________________________________________________________________________________
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -76,11 +84,12 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
+# if [ "$color_prompt" = yes ]; then
+#     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+# else
+#     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+# fi
+
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
