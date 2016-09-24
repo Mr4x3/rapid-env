@@ -12,17 +12,19 @@ alias ssr='~/Documents/schoolsmart/manage.py runserver 8002'
 alias b4i='source ~/Documents/env_buy4industry/bin/activate'
 alias b4ir='~/Documents/buy4industry/manage.py runserver 8003'
 
-alias install='sudo apt-get install'
-alias remove='sudo apt-get remove'
-alias update='sudo apt-get update'
-alias upgrade='sudo apt-get update && sudo apt-get upgrade'
+
+
+alias install='sudo apt -y install'
+alias remove='sudo apt -y remove'
+alias update='sudo apt -y update'
+alias upgrade='sudo apt -y update && sudo apt -y upgrade'
 ################Commands###################
 cd ~/Documents
 
 ################Exports####################
 today=$(date +"%b-%d-%Y [%H:%M:%S]")
 #################Best Prompt Yet############
-PS1="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[0;33m\]\u\[\033[0;37m\]@\[\033[0;96m\]\h'; fi)\[\033[0;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;37m\]]\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"
+PS1="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[0;33m\]\u\[\033[0;37m\]@\[\033[0;96m\]\h'; fi)\[\033[0;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;37m\]]-\e[0;31m\$(date +"[%H:%M:%S]")\e[1;37m🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢂\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"
 
 
 #_______________________________________________________________________________________________________
