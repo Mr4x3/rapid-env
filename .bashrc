@@ -24,10 +24,46 @@ cd ~/Documents
 ################Exports####################
 today=$(date +"%b-%d-%Y [%H:%M:%S]")
 #################Best Prompt Yet############
-PS1="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[0;33m\]\u\[\033[0;37m\]@\[\033[0;96m\]\h'; fi)\[\033[0;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;37m\]]-\e[0;31m\$(date +"[%H:%M:%S]")\e[1;37m$(__git_ps1)\e[0;31m 🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢜🢂\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"
-# This shows a asterisk * whenever there are non-committed changes around. It also shows a plus + for changes which are staged but not yet commited (git add)
-export GIT_PS1_SHOWDIRTYSTATE=1
+##
+# Configure colors, if available.
+c_reset='\[\e[0m\]'
+c_user='\[\e[1;33m\]'
+c_path='\[\e[0;33m\]'
+c_git_clean='\[\e[0;36m\]'
+c_git_dirty='\[\e[0;35m\]'
 
+# Function to assemble the Git parsingart of our prompt.
+git_prompt ()
+{
+  if ! git rev-parse --git-dir > /dev/null 2>&1; then
+    return 0
+  fi
+
+  git_branch=$(git branch 2>/dev/null | sed -n '/^\*/s/^\* //p')
+
+  # if git diff --quiet 2>/dev/null >&2; then
+  #   git_color="$c_git_clean"
+  # else
+  #   git_color="$c_git_dirty"
+  # fi
+
+  if git diff --quiet 2>/dev/null >&2; then
+    status="✔"
+  else
+    status="✘"
+  fi
+
+  # echo "[$git_color $git_branch ${c_reset}]"
+  echo "[$status $git_branch]"
+}
+# PROMPT_COMMAND='PS1="${c_user}\u${c_reset}@${c_user}\h${c_reset}:${c_path}\w${c_reset}$(git_prompt)\$ "'
+PS1="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[0;33m\]\u\[\033[0;37m\]@\[\033[0;96m\]\h'; fi)\[\033[0;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;37m\]]-\e[0;31m\$(date +"[%H:%M:%S]") \e[1;37m\$(git_prompt)\e[0;31m 🢜🢜🢜🢜🢜🢜🢜🢜🢜🢂\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"
+# This shows a asterisk * whenever there are non-committed changes around. It also shows a plus + for changes which are staged but not yet commited (git add)
+# export GIT_PS1_SHOWDIRTYSTATE=1
+# parse_git_branch() {
+#      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+# }
+# export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 #_______________________________________________________________________________________________________
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
