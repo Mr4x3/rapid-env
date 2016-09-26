@@ -3,7 +3,7 @@ alias python='python3'
 alias pip='pip3'
 alias gitp='git push'
 alias gitf='git fetch'
-
+alias gitr='git rebase'
 
 alias spv='source ~/Documents/env_sportsvitae/bin/activate'
 alias spvr='~/Documents/sportsvitae/manage.py runserver 8001'
