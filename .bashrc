@@ -11,7 +11,10 @@ alias ss='source ~/Documents/env_schoolsmart/bin/activate'
 alias ssr='~/Documents/schoolsmart/manage.py runserver 8002'
 alias b4i='source ~/Documents/env_buy4industry/bin/activate'
 alias b4ir='~/Documents/buy4industry/manage.py runserver 8003'
-
+alias lm='source ~/Documents/env_lm/bin/activate'
+alias lmr='~/Documents/little_millennium/manage.py runserver 8004'
+alias yum='source ~/Documents/venv/yumm_tiffin/bin/activate'
+alias yumr='~/Documents/yum_tiffin/manage.py runserver 8006'
 
 
 alias install='sudo apt -y install'
@@ -56,8 +59,25 @@ git_prompt ()
   # echo "[$git_color $git_branch ${c_reset}]"
   echo "[$status $git_branch]"
 }
+
+function virtualenv_info(){
+    # Get Virtual Env
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        # Strip out the path and just leave the env name
+        venv="${VIRTUAL_ENV##*/}"
+    else
+        # In case you don't have one activated
+        venv=''
+    fi
+    [[ -n "$venv" ]] && echo "(venv:$venv) "
+}
+
+# Disable Virtual Env Prompt
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+#local VENV="\$(virtualenv_info)";
 # PROMPT_COMMAND='PS1="${c_user}\u${c_reset}@${c_user}\h${c_reset}:${c_path}\w${c_reset}$(git_prompt)\$ "'
-PS1="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[0;33m\]\u\[\033[0;37m\]@\[\033[0;96m\]\h'; fi)\[\033[0;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;37m\]]-\e[0;31m\$(date +"[%H:%M:%S]") \e[1;37m\$(git_prompt)\e[0;31m 🢜🢜🢜🢜🢜🢜🢜🢜🢜🢂\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"
+PS1="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[0;33m\]\u\[\033[0;37m\]@\[\033[0;96m\]\h'; fi)\[\033[0;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;37m\]]-\e[0;31m\$(date +"[%H:%M:%S]") \e[1;37m\$(git_prompt)\e[0;31m 🢜🢜🢜🢂\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"
 # This shows a asterisk * whenever there are non-committed changes around. It also shows a plus + for changes which are staged but not yet commited (git add)
 # export GIT_PS1_SHOWDIRTYSTATE=1
 # parse_git_branch() {
