@@ -7,4 +7,4 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 git config --global alias.st "status"
 
 # Packages Install
-sudo apt install -y python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux
+sudo apt install -y python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux indicator-multiload indicator-cpufreq
