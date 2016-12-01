@@ -15,13 +15,14 @@ alias gitl='git lg'
 alias gitd='git diff'
 
 # Projects Alias
-alias spvr='~/Documents/Projects/sportsvitae/manage.py runserver 8001'
-alias ssr='~/Documents/Projects/schoolsmart/manage.py runserver 8002'
-alias b4ir='~/Documents/Projects/buy4industry/manage.py runserver 8003'
-alias lmr='~/Documents/Projects/little_millennium/manage.py runserver 8004'
-alias yumr='~/Documents/Projects/yum_tiffin/manage.py runserver 8006'
-alias lpr='~/Documents/Projects/land_parcel/manage.py runserver 8007'
-alias vbr='~/Documents/Projects/apis_vbrand/manage.py runserver 8008'
+alias spvr='~/Documents/django-projects/sportsvitae/manage.py runserver 8001'
+alias ssr='~/Documents/django-projects/schoolsmart/manage.py runserver 8002'
+alias b4ir='~/Documents/django-projects/buy4industry/manage.py runserver 8003'
+alias lmr='~/Documents/django-projects/little_millennium/manage.py runserver 8004'
+alias yumr='~/Documents/django-projects/yum_tiffin/manage.py runserver 8006'
+alias lpr='~/Documents/django-projects/land_parcel/manage.py runserver 8007'
+alias vbr='~/Documents/django-projects/apis_vbrand/manage.py runserver 8008'
+alias rdr='~/Documents/django-projects/raktdaan/manage.py runserver 8009'
 
 # Linux Alias
 alias install='sudo apt -y install'
@@ -37,7 +38,7 @@ alias migrate='python3 manage.py migrate'
 
 # Venv Wrapper
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Documents/Projects/
+export PROJECT_HOME=$HOME/Documents/django-projects/
 export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
 source /usr/local/bin/virtualenvwrapper.sh
 alias mkproject='mkproject --python=/usr/bin/python3'
@@ -96,7 +97,7 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 # PROMPT_COMMAND='PS1="${c_user}\u${c_reset}@${c_user}\h${c_reset}:${c_path}\w${c_reset}$(git_prompt)\$ "'
 PS2="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[0;33m\]\u\[\033[0;37m\]@\[\033[0;96m\]\h'; fi)\[\033[0;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;37m\]]-\e[0;31m\$(date +"[%H:%M:%S]") \e[1;37m\$(git_prompt)\e[0;31m 🢜🢜🢜🢂\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"
 
-PS1="\[\033[1;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[1;31m\]\342\234\227\[\033[1;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\e[1;33m\]\u\[\033[0;37m\]@\[\033[1;96m\]\h'; fi)\[\033[1;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[1;37m\]]-\$(tput setaf 9)\$(date +"[%H:%M:%S]")\e[1;37m\$(git_prompt)\$(tput setaf 9)🢜🢜🢜🢂 \n\[\033[0;37m\]\342\224\224\342\224\200\[\033[1;37m\][\e[1;33m\$(virtualenv_info)\[\033[1;37m\]]--->>\e[1m\[\033[0m\]"
+PS1="\[\033[1;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[1;31m\]\342\234\227\[\033[1;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[1;30m\]\u\[\033[1;30m\]@\[\033[1;30m\]\h'; fi)\[\033[1;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[1;37m\]]-\[\033[1;34m\]\$(date +"[%H:%M:%S]")\e[1;37m\$(git_prompt)\[\033[1;34m\]🢜🢜🢜🢂 \n\[\033[0;37m\]\342\224\224\342\224\200\[\033[1;37m\][\[\033[1;33m\]\$(virtualenv_info)\[\033[1;37m\]]--->>\[\033[1;36m\]"
 # This shows a asterisk * whenever there are non-committed changes around. It also shows a plus + for changes which are staged but not yet commited (git add)
 # export GIT_PS1_SHOWDIRTYSTATE=1
 # parse_git_branch() {
