@@ -22,7 +22,7 @@ git config --global core.excludesfile $present_directry.gitignore
 sudo apt -y update && sudo apt -y upgrade
 
 # Packages Install
-sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux indicator-multiload indicator-cpufreq mysql-server dtrx
+sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux indicator-multiload indicator-cpufreq mysql-server dtrx whois
 
 # Update Pip
 sudo pip3 install --upgrade pip
