@@ -18,11 +18,15 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 git config --global alias.st "status"
 git config --global core.excludesfile $present_directry.gitignore
 
+# PPA If Not Portable
+# sudo add-apt-repository ppa:indicator-multiload/stable-daily
+# sudo apt install -y indicator-multiload indicator-cpufreq
+
 # Update System
 sudo apt -y update && sudo apt -y upgrade
 
 # Packages Install
-sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux indicator-multiload indicator-cpufreq mysql-server dtrx whois
+sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois
 
 # Update Pip
 sudo pip3 install --upgrade pip
