@@ -36,6 +36,9 @@ alias run='python3 manage.py runserver 8888'
 alias mm='python3 manage.py makemigrations'
 alias migrate='python3 manage.py migrate'
 
+# Other Alias
+
+
 # Venv Wrapper
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Documents/django-projects/

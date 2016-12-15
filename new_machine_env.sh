@@ -26,7 +26,8 @@ git config --global core.excludesfile $present_directry.gitignore
 sudo apt -y update && sudo apt -y upgrade
 
 # Packages Install
-sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois
+sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon
 
 # Update Pip
 sudo pip3 install --upgrade pip
+sudo pip install virtualenvwrapper
