@@ -1,0 +1,67 @@
+{
+  "puddlestuff.functions_formatValue": {
+    "fields": [
+      "~artist", 
+      "title", 
+      "album", 
+      "year", 
+      "genre", 
+      "albumartist", 
+      "wwwsource", 
+      "wwwcopyright", 
+      "www:", 
+      "discnumber", 
+      "track"
+    ], 
+    "arguments": [
+      "\u00a9 Mr.4x3\u2122"
+    ]
+  }, 
+  "puddlestuff.functions_move": {
+    "fields": [
+      "just nothing to do with this"
+    ], 
+    "arguments": [
+      "%artist% - %title%"
+    ]
+  }, 
+  "puddlestuff.functions_autonumbering": {
+    "fields": [
+      "track"
+    ], 
+    "arguments": [
+      1, 
+      false, 
+      1
+    ]
+  }, 
+  "puddlestuff.functions_replace": {
+    "fields": [
+      "__selected"
+    ], 
+    "arguments": [
+      "Meredith Bull - Doctor, Doctor.mp3", 
+      "Meredith Bull - Doctor, Doctor.mp3", 
+      false, 
+      false
+    ]
+  }, 
+  "puddlestuff.functions_filenametotag": {
+    "fields": [
+      "just nothing to do with this"
+    ], 
+    "arguments": [
+      "%artist% - %title%"
+    ]
+  }, 
+  "puddlestuff.functions_titleCase": {
+    "fields": [
+      "artist", 
+      "title"
+    ], 
+    "arguments": [
+      "Mixed Case", 
+      "., !("
+    ]
+  }
+}

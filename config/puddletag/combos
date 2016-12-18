@@ -1,0 +1,78 @@
+{
+  "w&ith:": {
+    "values": [
+      "Maroon 5 - Daylight.flac", 
+      "Meredith Bull - Doctor, Doctor.mp3"
+    ]
+  }, 
+  "&Pattern (can be relative path)": {
+    "values": [
+      "lyrics.txt"
+    ]
+  }, 
+  "&Output": {
+    "values": [
+      "", 
+      ""
+    ]
+  }, 
+  "&Text": {
+    "values": [
+      "", 
+      "gggg", 
+      ""
+    ]
+  }, 
+  "&Field list (; separated):": {
+    "values": [
+      "", 
+      ""
+    ]
+  }, 
+  "For &Mixed Case, after any of:": {
+    "values": [
+      "., !", 
+      "., !("
+    ]
+  }, 
+  "filter_text": {
+    "values": [
+      "", 
+      ""
+    ]
+  }, 
+  "&Pattern": {
+    "values": [
+      "", 
+      "%artist% - %title%", 
+      "%albumartist% - %title%", 
+      "%albumartist% - %ntitle%", 
+      "%track%. %albumartist% - %title%", 
+      "%track%. %artist% - %title%", 
+      "%track%", 
+      "%track%.%artist% - %title%", 
+      "%track%.  %artist% ''%title%''", 
+      "%track% %title%", 
+      "%track% - %artist% - %title%", 
+      "%track%. %year% - %title%", 
+      " - %title%", 
+      "%artist% - %title%"
+    ]
+  }, 
+  "&Replace": {
+    "values": [
+      "Maroon 5 - Daylight.flac", 
+      "Meredith Bull - Doctor, Doctor.mp3"
+    ]
+  }, 
+  "&Format string": {
+    "values": [
+      "xcxx", 
+      "Mr.4x3", 
+      "\u00a9 Mr.4x3\u2122", 
+      "http://crushus.com", 
+      "From The Collection Of Mr.4x3 [http://CrushUs.com]", 
+      "\u00a9 Mr.4x3\u2122"
+    ]
+  }
+}

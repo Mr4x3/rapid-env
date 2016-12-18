@@ -1,0 +1,215 @@
+{
+  "22": {
+    "titles": [
+      "Web"
+    ], 
+    "tags": [
+      "www:"
+    ]
+  }, 
+  "20": {
+    "titles": [
+      "organization"
+    ], 
+    "tags": [
+      "organization"
+    ]
+  }, 
+  "panel": {
+    "numrows": "11"
+  }, 
+  "11": {
+    "titles": [
+      "arranger"
+    ], 
+    "tags": [
+      "arranger"
+    ]
+  }, 
+  "10": {
+    "titles": [
+      "Web", 
+      "WwwCopyright", 
+      "Website"
+    ], 
+    "tags": [
+      "www:", 
+      "wwwcopyright", 
+      "wwwsource"
+    ]
+  }, 
+  "13": {
+    "titles": [
+      "conductor"
+    ], 
+    "tags": [
+      "conductor"
+    ]
+  }, 
+  "12": {
+    "titles": [
+      "author"
+    ], 
+    "tags": [
+      "author"
+    ]
+  }, 
+  "15": {
+    "titles": [
+      "encodedby"
+    ], 
+    "tags": [
+      "encodedby"
+    ]
+  }, 
+  "21": {
+    "titles": [
+      "Version"
+    ], 
+    "tags": [
+      "version"
+    ]
+  }, 
+  "17": {
+    "titles": [
+      "isrc"
+    ], 
+    "tags": [
+      "isrc"
+    ]
+  }, 
+  "16": {
+    "titles": [
+      "grouping"
+    ], 
+    "tags": [
+      "grouping"
+    ]
+  }, 
+  "19": {
+    "titles": [
+      "lyricist"
+    ], 
+    "tags": [
+      "lyricist"
+    ]
+  }, 
+  "18": {
+    "titles": [
+      "itunescompilationflag"
+    ], 
+    "tags": [
+      "itunescompilationflag"
+    ]
+  }, 
+  "1": {
+    "titles": [
+      "&Title"
+    ], 
+    "tags": [
+      "title"
+    ]
+  }, 
+  "0": {
+    "titles": [
+      "&Artist", 
+      "Album Artist"
+    ], 
+    "tags": [
+      "artist", 
+      "albumartist"
+    ]
+  }, 
+  "3": {
+    "titles": [
+      "&Year", 
+      "&Genre"
+    ], 
+    "tags": [
+      "year", 
+      "genre"
+    ]
+  }, 
+  "2": {
+    "titles": [
+      "Al&bum"
+    ], 
+    "tags": [
+      "album"
+    ]
+  }, 
+  "5": {
+    "titles": [
+      "&Comment", 
+      "Composer", 
+      "Copyright"
+    ], 
+    "tags": [
+      "comment", 
+      "composer", 
+      "copyright"
+    ]
+  }, 
+  "4": {
+    "titles": [
+      "TrackNo", 
+      "discnumber"
+    ], 
+    "tags": [
+      "track", 
+      "discnumber"
+    ]
+  }, 
+  "7": {
+    "titles": [
+      "encodedby", 
+      "grouping", 
+      "isrc"
+    ], 
+    "tags": [
+      "encodedby", 
+      "grouping", 
+      "isrc"
+    ]
+  }, 
+  "6": {
+    "titles": [
+      "arranger", 
+      "author", 
+      "conductor"
+    ], 
+    "tags": [
+      "arranger", 
+      "author", 
+      "conductor"
+    ]
+  }, 
+  "9": {
+    "titles": [
+      "Powered By"
+    ], 
+    "tags": [
+      "poweredby"
+    ]
+  }, 
+  "8": {
+    "titles": [
+      "lyricist", 
+      "organization", 
+      "Version"
+    ], 
+    "tags": [
+      "lyricist", 
+      "organization", 
+      "version"
+    ]
+  }, 
+  "14": {
+    "titles": [
+      "discnumber"
+    ], 
+    "tags": [
+      "discnumber"
+    ]
+  }
+}

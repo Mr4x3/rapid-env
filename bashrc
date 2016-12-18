@@ -1,18 +1,22 @@
 
 ##############--Mr.4x3 Alias--#############
-
+# Exports
+export EDITOR=vim
 # Python Related Alias
+alias py='python3'
 alias python='python3'
 alias pip='pip3'
 alias bpython='bpython3'
 
 # Git Alias
-alias gitp='git push'
-alias gitf='git fetch && git rebase'
-alias gitr='git rebase'
-alias gits='git status'
-alias gitl='git lg'
-alias gitd='git diff'
+alias gi='git init'
+alias gc='git commit'
+alias gp='git push'
+alias gf='git fetch && git rebase'
+alias gr='git rebase'
+alias gs='git status'
+alias gl='git lg'
+alias gd='git diff'
 
 # Projects Alias
 alias spvr='~/Documents/django-projects/sportsvitae/manage.py runserver 8001'
@@ -25,10 +29,18 @@ alias vbr='~/Documents/django-projects/apis_vbrand/manage.py runserver 8008'
 alias rdr='~/Documents/django-projects/raktdaan/manage.py runserver 8009'
 
 # Linux Alias
+alias bye='sudo shutdown -h now'
 alias install='sudo apt -y install'
 alias remove='sudo apt -y remove'
 alias update='sudo apt -y update'
 alias upgrade='sudo apt -y update && sudo apt -y upgrade'
+alias clean='sudo apt-get autoclean && sudo apt-get autoremove'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+# Empty the trash folder that is created when you delete things as root
+alias root_trash='sudo bash -c "exec rm -r /root/.local/share/Trash/{files,info}/*"'
 
 # Django Alias
 alias csu='python3 manage.py createsuperuser'
@@ -37,6 +49,10 @@ alias mm='python3 manage.py makemigrations'
 alias migrate='python3 manage.py migrate'
 
 # Other Alias
+alias top='top -o cpu'
+alias ..='cd ..'
+alias dev='cd ~/Documents/'
+alias l='ls -CF'
 
 
 # Venv Wrapper
@@ -153,7 +169,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
