@@ -7,7 +7,7 @@
 rm ~/.bashrc
 # Present Directry
 present_directry=./
-ln $present_directry.bashrc ~/.bashrc
+ln -s $present_directrybashrc ~/.bashrc
 
 # Git Configurations
 git config --global user.email "Vivek@crushus.com"
@@ -21,12 +21,15 @@ git config --global core.excludesfile $present_directry.gitignore
 # PPA If Not Portable
 # sudo add-apt-repository ppa:indicator-multiload/stable-daily
 # sudo apt install -y indicator-multiload indicator-cpufreq
-
+# sudo add-apt-repository ppa:neovim-ppa/unstable
+# sudo apt-get install neovim
 # Update System
+# ln -s Documents/rapid-env/config/nvim/ ~/.config/nvim
+# sudo pip2 install --upgrade --force-reinstall neovim --user
 sudo apt -y update && sudo apt -y upgrade
 
 # Packages Install
-sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon
+sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox exuberant-ctags
 
 # Update Pip
 sudo pip3 install --upgrade pip

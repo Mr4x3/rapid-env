@@ -53,7 +53,7 @@ alias top='top -o cpu'
 alias ..='cd ..'
 alias dev='cd ~/Documents/'
 alias l='ls -CF'
-
+alias vim='nvim'
 
 # Venv Wrapper
 export WORKON_HOME=$HOME/.virtualenvs
@@ -116,7 +116,7 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 # PROMPT_COMMAND='PS1="${c_user}\u${c_reset}@${c_user}\h${c_reset}:${c_path}\w${c_reset}$(git_prompt)\$ "'
 PS2="\[\033[0;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[0;33m\]\u\[\033[0;37m\]@\[\033[0;96m\]\h'; fi)\[\033[0;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;37m\]]-\e[0;31m\$(date +"[%H:%M:%S]") \e[1;37m\$(git_prompt)\e[0;31m 🢜🢜🢜🢂\n\[\033[0;37m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]"
 
-PS1="\[\033[1;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[1;31m\]\342\234\227\[\033[1;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[1;30m\]\u\[\033[1;30m\]@\[\033[1;30m\]\h'; fi)\[\033[1;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[1;37m\]]-\[\033[1;34m\]\$(date +"[%H:%M:%S]")\e[1;37m\$(git_prompt)\[\033[1;34m\]🢜🢜🢜🢂 \n\[\033[0;37m\]\342\224\224\342\224\200\[\033[1;37m\][\[\033[1;33m\]\$(virtualenv_info)\[\033[1;37m\]]--->>\[\033[1;36m\]"
+PS1="\[\033[1;37m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[1;31m\]\342\234\227\[\033[1;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]\h'; else echo '\[\033[1;30m\]\u\[\033[1;30m\]@\[\033[1;30m\]\h'; fi)\[\033[1;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[1;37m\]]-\[\033[1;34m\]\$(date +"[%H:%M:%S]")\e[1;37m\$(git_prompt)\[\033[1;34m\]🢜🢜🢜🢂 \n\[\033[0;37m\]\342\224\224\342\224\200\[\033[1;37m\][\[\033[1;33m\]\$(virtualenv_info)\[\033[1;37m\]]--->>\[\033[0;36m\]"
 # This shows a asterisk * whenever there are non-committed changes around. It also shows a plus + for changes which are staged but not yet commited (git add)
 # export GIT_PS1_SHOWDIRTYSTATE=1
 # parse_git_branch() {
