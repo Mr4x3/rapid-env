@@ -1,7 +1,29 @@
 source ~/.config/nvim/plugins.vim
 
-" Section General {{{
+" Python Mode Customize"
+" Override go-to.definition key shortcut to Ctrl-]
+let g:pymode_rope_goto_definition_bind = "<C-]>"
+let g:pymode_lint_maxlinelength = 119
+let g:pymode_folding = 0
+let g:pymode_lint_ignore = "E125,E126,E127,E128,E201,E202,E225,E226,E227,E228,E231,E301,E302,E502"
 
+
+" Nerd Tree Custom
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
+
+" Section General {{{
+" Modifiable Buffer
+:set modifiable
 " Abbreviations
 abbr funciton function
 abbr teh the
@@ -259,7 +281,7 @@ nmap <silent> <leader>k :NERDTreeToggle<cr>
 " expand to the path of the file in the current buffer
 nmap <silent> <leader>y :NERDTreeFind<cr>
 
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0
 let NERDTreeDirArrowExpandable = '▷'
 let NERDTreeDirArrowCollapsible = '▼'
 

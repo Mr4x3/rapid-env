@@ -4,9 +4,35 @@ call plug#begin('~/.config/nvim/plugged')
 " Plug 'dracula/vim'
 Plug 'joshdick/onedark.vim'
 
+
+
+" Mr.4x3 New
+
+Plug 'Valloric/YouCompleteMe'
+Plug 'Shougo/neocomplete.vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'python-mode/python-mode'
+Plug 'airblade/vim-gitgutter'
+
+" Commenter
+Plug 'scrooloose/nerdcommenter'
+
+
+"" Command completion
+" Bundle 'davidhalter/jedi-vim'
+" Bundle 'ervandew/supertab'
+
+" Django templates
+Plug 'mjbrownie/vim-htmldjango_omnicomplete'
+
 " utilities
 " Plug 'ctrlpvim/ctrlp.vim' " fuzzy file finder, mapped to <leader>t
-Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' " file drawer
+" Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' " file drawer
+" Nerd Tree And Git
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim' " fuzzy file finder and so much more
 Plug 'mileszs/ack.vim' " search inside files using ack. Same as command line ack utility, but use :Ack
 Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
@@ -79,4 +105,3 @@ Plug 'timcharper/textile.vim', { 'for': 'textile' } " textile support
 Plug 'tclem/vim-arduino' " arduino support - compile wihtout needing to open the arduino IDE
 
 call plug#end()
-
