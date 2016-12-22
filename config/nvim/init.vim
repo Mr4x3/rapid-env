@@ -10,15 +10,15 @@ let g:pymode_lint_ignore = "E125,E126,E127,E128,E201,E202,E225,E226,E227,E228,E2
 
 " Nerd Tree Custom
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ "Unknown"   : "?"
+    \ "Modified"  : "✹ ",
+    \ "Staged"    : "✚ ",
+    \ "Untracked" : "✭ ",
+    \ "Renamed"   : "➜ ",
+    \ "Unmerged"  : "═ ",
+    \ "Deleted"   : "✖ ",
+    \ "Dirty"     : "✗ ",
+    \ "Clean"     : "✔︎ ",
+    \ "Unknown"   : "? "
     \ }
 
 " Section General {{{
@@ -282,18 +282,18 @@ nmap <silent> <leader>k :NERDTreeToggle<cr>
 nmap <silent> <leader>y :NERDTreeFind<cr>
 
 let NERDTreeShowHidden=0
-let NERDTreeDirArrowExpandable = '▷'
-let NERDTreeDirArrowCollapsible = '▼'
+" let NERDTreeDirArrowExpandable = '▷'
+" let NERDTreeDirArrowCollapsible = '▼'
 
-let g:fzf_layout = { 'down': '~25%' }
+" let g:fzf_layout = { 'down': '~25%' }
 
-if isdirectory(".git")
-    " if in a git project, use :GFiles
-    nmap <silent> <leader>t :GFiles<cr>
-else
-    " otherwise, use :FZF
-    nmap <silent> <leader>t :FZF<cr>
-endif
+" if isdirectory(".git")
+"    " if in a git project, use :GFiles
+"     nmap <silent> <leader>t :GFiles<cr>
+" else
+"     " otherwise, use :FZF
+"     nmap <silent> <leader>t :FZF<cr>
+" endif
 
 nmap <silent> <leader>r :Buffers<cr>
 nmap <silent> <leader>e :FZF<cr>

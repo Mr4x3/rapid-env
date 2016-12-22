@@ -7,7 +7,7 @@
 rm ~/.bashrc
 # Present Directry
 present_directry=./
-ln -s $present_directrybashrc ~/.bashrc
+ln -s bashrc ~/.bashrc
 
 # Git Configurations
 git config --global user.email "Vivek@crushus.com"
