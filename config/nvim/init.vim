@@ -1,16 +1,100 @@
 source ~/.config/nvim/plugins.vim
 
-" Python Mode Customize"
+" Set a map leader for more key combos
+let mapleader = ','
+
+" Mixed Configurations {{{
+
+" Title Case
+let g:titlecase_map_keys = 0
+nmap <leader>gT <Plug>Titlecase
+vmap <leader>gT <Plug>Titlecase
+nmap <leader>gt <Plug>TitlecaseLine
+
+
+" CtrlP Configurations
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" shortcut to save
+nmap <leader>, :w<cr>
+
+" Shortcut For quit
+nmap <leader>q :q<cr>
+
+" set paste toggle
+set pastetoggle=<leader>v
+
+" toggle paste mode
+" map <leader>v :set paste!<cr>
+
+" Edit Config  ~/.config/nvim/init.vim
+map <leader>c :e! ~/.config/nvim/init.vim<cr>
+
+" edit gitconfig
+map <leader>eg :e! ~/.gitconfig<cr>
+
+" }}}
+
+" Line Moving Across Document {{{
+" Normal mode
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+
+" Insert mode
+inoremap <C-j> <ESC>:m .+1<CR>==gi
+inoremap <C-k> <ESC>:m .-2<CR>==gi
+
+" Visual mode
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
+" }}}
+
+" Python Mode Customize {{{
 " Override go-to.definition key shortcut to Ctrl-]
-let g:pymode_rope_goto_definition_bind = "<C-]>"
+let g:pymode_rope_goto_definition_bind = "<C-A-g>"
 let g:pymode_lint_maxlinelength = 119
-let g:pymode_folding = 0
-let g:pymode_lint_ignore = "E125,E126,E127,E128,E201,E202,E225,E226,E227,E228,E231,E301,E302,E502"
+let g:pymode_folding = 1
+let g:pymode_lint_ignore="E501"
+" let g:pymode_lint_ignore = "E125,E126,E127,E128,E201,E202,E225,E226,E227,E228,E231,E301,E302,E501,E502"
+" }}}
 
 
-" Nerd Tree Custom
+" Browser Like Switching Tabs {{{
+" Switching
+nnoremap <C-S-tab> :tabprevious<CR>
+nnoremap <C-tab>   :tabn<CR>
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+inoremap <C-tab>   <Esc>:tabnext<CR>i
+inoremap <C-t>     <Esc>:tabnew<CR>
+inoremap <C-w>   <Esc>:tabclose<CR>
+
+nnoremap <A-1> 1gt
+nnoremap <A-2> 2gt
+nnoremap <A-3> 3gt
+nnoremap <A-4> 4gt
+nnoremap <A-5> 5gt
+nnoremap <A-6> 6gt
+nnoremap <A-7> 7gt
+nnoremap <A-8> 8gt
+nnoremap <A-9> 9gt
+" }}}
+
+
+" Nerd Tree Custom {{{
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+" Toggle NERDTree
+nmap <silent> <C-\> :NERDTreeToggle<cr>
+nmap <silent> <A-\> :NERDTreeFocus<cr>
+" nmap <silent> <leader>y :NERDTreeFind<cr>
+let NERDTreeShowHidden=0
+" let g:NERDTreeWinPos = "right"
+" let NERDTreeWinPos=1
+" autocmd VimEnter * NERDTree
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹ ",
+    \ "Modified"  : "✹",
     \ "Staged"    : "✚ ",
     \ "Untracked" : "✭ ",
     \ "Renamed"   : "➜ ",
@@ -20,10 +104,10 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Clean"     : "✔︎ ",
     \ "Unknown"   : "? "
     \ }
+" }}}
+
 
 " Section General {{{
-" Modifiable Buffer
-:set modifiable
 " Abbreviations
 abbr funciton function
 abbr teh the
@@ -97,7 +181,7 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 set backspace=indent,eol,start
 
 " Tab control
-set noexpandtab             " insert tabs rather than spaces for <Tab>
+" set noexpandtab             " insert tabs rather than spaces for <Tab>
 set smarttab                " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
 set tabstop=4               " the visible width of tabs
 set softtabstop=4           " edit as if the tabs are 4 characters wide
@@ -108,7 +192,7 @@ set completeopt+=longest
 " code folding settings
 set foldmethod=syntax       " fold based on indent
 set foldnestmax=10          " deepest fold is 10 levels
-set nofoldenable            " don't fold by default
+" set nofoldenable            " don't fold by default
 set foldlevel=1
 
 set clipboard=unnamed
@@ -154,28 +238,12 @@ endif
 
 " Section Mappings {{{
 
-" set a map leader for more key combos
-let mapleader = ','
-
 " remap esc
 inoremap jk <esc>
 
 " wipout buffer
 nmap <silent> <leader>b :bw<cr>
 
-" shortcut to save
-nmap <leader>, :w<cr>
-
-" set paste toggle
-set pastetoggle=<leader>v
-
-" toggle paste mode
-" map <leader>v :set paste!<cr>
-
-" edit ~/.config/nvim/init.vim
-map <leader>ev :e! ~/.config/nvim/init.vim<cr>
-" edit gitconfig
-map <leader>eg :e! ~/.gitconfig<cr>
 
 " clear highlighted search
 noremap <space> :set hlsearch! hlsearch?<cr>
@@ -193,14 +261,15 @@ nmap <leader><space> :%s/\s\+$<cr>
 nmap <leader>l :set list!<cr>
 
 " Textmate style indentation
-vmap <leader>[ <gv
-vmap <leader>] >gv
-nmap <leader>[ <<
-nmap <leader>] >>
+" vmap <leader>[ <gv
+" vmap <leader>] >gv
+" nmap <leader>[ <<
+" nmap <leader>] >>
 
 " switch between current and last buffer
 nmap <leader>. <c-^>
-
+" Terminal Open
+map <leader>t :terminal<cr>
 " enable . command in visual mode
 vnoremap . :normal .<cr>
 
@@ -276,12 +345,6 @@ augroup END
 " FZF
 """""""""""""""""""""""""""""""""""""
 
-" Toggle NERDTree
-nmap <silent> <leader>k :NERDTreeToggle<cr>
-" expand to the path of the file in the current buffer
-nmap <silent> <leader>y :NERDTreeFind<cr>
-
-let NERDTreeShowHidden=0
 " let NERDTreeDirArrowExpandable = '▷'
 " let NERDTreeDirArrowCollapsible = '▼'
 
@@ -296,31 +359,31 @@ let NERDTreeShowHidden=0
 " endif
 
 nmap <silent> <leader>r :Buffers<cr>
-nmap <silent> <leader>e :FZF<cr>
-nmap <leader><tab> <plug>(fzf-maps-n)
-xmap <leader><tab> <plug>(fzf-maps-x)
-omap <leader><tab> <plug>(fzf-maps-o)
+" nmap <silent> <leader>e :FZF<cr>
+" nmap <leader><tab> <plug>(fzf-maps-n)
+" xmap <leader><tab> <plug>(fzf-maps-x)
+" omap <leader><tab> <plug>(fzf-maps-o)
 
 " Insert mode completion
-imap <c-x><c-k> <plug>(fzf-complete-word)
-imap <c-x><c-f> <plug>(fzf-complete-path)
-imap <c-x><c-j> <plug>(fzf-complete-file-ag)
-imap <c-x><c-l> <plug>(fzf-complete-line)
+" imap <c-x><c-k> <plug>(fzf-complete-word)
+" imap <c-x><c-f> <plug>(fzf-complete-path)
+" imap <c-x><c-j> <plug>(fzf-complete-file-ag)
+" imap <c-x><c-l> <plug>(fzf-complete-line)
 
-nnoremap <silent> <Leader>C :call fzf#run({
-\   'source':
-\     map(split(globpath(&rtp, "colors/*.vim"), "\n"),
-\         "substitute(fnamemodify(v:val, ':t'), '\\..\\{-}$', '', '')"),
-\   'sink':    'colo',
-\   'options': '+m',
-\   'left':    30
-\ })<CR>
+" nnoremap <silent> <Leader>C :call fzf#run({
+" \   'source':
+" \     map(split(globpath(&rtp, "colors/*.vim"), "\n"),
+" \         "substitute(fnamemodify(v:val, ':t'), '\\..\\{-}$', '', '')"),
+" \   'sink':    'colo',
+" \   'options': '+m',
+" \   'left':    30
+" \ })<CR>
 
-command! FZFMru call fzf#run({
-\  'source':  v:oldfiles,
-\  'sink':    'e',
-\  'options': '-m -x +s',
-\  'down':    '40%'})
+" command! FZFMru call fzf#run({
+" \  'source':  v:oldfiles,
+" \  'sink':    'e',
+" \  'options': '-m -x +s',
+" \  'down':    '40%'})
 
 
 " Fugitive Shortcuts

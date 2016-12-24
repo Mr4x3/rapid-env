@@ -6,8 +6,12 @@
 
 rm ~/.bashrc
 # Present Directry
-present_directry=./
-ln -s bashrc ~/.bashrc
+# May Use $PWD For Back Use $OLDPWD
+present_directry=$(pwd)
+ln -s "$present_directry/bashrc" ~/.bashrc
+ln -s "$PWD/config/audacious/" ~/.config/
+ln -s "$PWD/config/puddletag/" ~/.config/
+ln -s "$PWD/config/transmission/" ~/.config/
 
 # Git Configurations
 git config --global user.email "Vivek@crushus.com"
@@ -29,7 +33,7 @@ git config --global core.excludesfile $present_directry.gitignore
 sudo apt -y update && sudo apt -y upgrade
 
 # Packages Install
-sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox exuberant-ctags
+sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox exuberant-ctag build-essential cmake python-dev
 
 # Update Pip
 sudo pip3 install --upgrade pip

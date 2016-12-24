@@ -1,0 +1,20 @@
+
+[gtkui]
+column_widths=10,275,175,10,175,175,10,100,29,10,275,275,275,10
+player_x=37
+player_y=24
+
+[gtkui-layout]
+item0_name=Album Art
+item0_pos=-1,0,0,296,196
+item_count=1
+
+[skins]
+player_x=37
+scope_mode=2
+skin=/usr/share/audacious/Skins/Classic
+vis_type=1
+voiceprint_mode=1
+
+[skins-layout]
+albumart=1023,18,300,200

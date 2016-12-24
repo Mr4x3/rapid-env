@@ -2,6 +2,7 @@
 ##############--Mr.4x3 Alias--#############
 # Exports
 export EDITOR=vim
+
 # Python Related Alias
 alias py='python3'
 alias python='python3'
@@ -39,6 +40,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+
 # Empty the trash folder that is created when you delete things as root
 alias root_trash='sudo bash -c "exec rm -r /root/.local/share/Trash/{files,info}/*"'
 
@@ -55,7 +57,7 @@ alias dev='cd ~/Documents/'
 alias l='ls -CF'
 alias vim='nvim'
 
-# Venv Wrapper
+# VENV Wrapper
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Documents/django-projects/
 export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
