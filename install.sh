@@ -9,10 +9,15 @@ rm ~/.bashrc
 # May Use $PWD For Back Use $OLDPWD
 present_directry=$(pwd)
 ln -s "$present_directry/bashrc" ~/.bashrc
+ln -s "$PWD/config/nvim/" ~/.config/
 ln -s "$PWD/config/audacious/" ~/.config/
 ln -s "$PWD/config/puddletag/" ~/.config/
 ln -s "$PWD/config/transmission/" ~/.config/
 ln -s "$PWD/gitconfig" ~/.gitconfig
+
+# For N Vim Icons
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
 
 # Git Configurations
 # git config --global user.email "Vivek@crushus.com"
