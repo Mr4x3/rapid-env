@@ -63,13 +63,17 @@ let g:pymode_lint_ignore="E501"
 
 " Browser Like Switching Tabs {{{
 " Switching
-nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :tabn<CR>
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-S-tab> <Esc>:tabprevious<CR>i
-inoremap <C-tab>   <Esc>:tabnext<CR>i
+nnoremap <C-S-tab> :tabprevious<cr>
+nnoremap <C-t>     :tabnew<cr>
+inoremap <C-S-tab> <Esc>:tabprevious<cr>i
+
+nnoremap <C-tab>   :tabNext<cr>
+inoremap <C-tab>   <Esc>:tabNext<cr>i
+
 inoremap <C-t>     <Esc>:tabnew<CR>
-inoremap <C-w>   <Esc>:tabclose<CR>
+
+inoremap <C-q>   <Esc>:tabclose<cr>
+nnoremap <C-q>   :tabclose<cr>
 
 nnoremap <A-1> 1gt
 nnoremap <A-2> 2gt
@@ -96,7 +100,7 @@ let NERDTreeShowHidden=0
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚ ",
-    \ "Untracked" : "✭ ",
+    \ "Untracked" : "✭",
     \ "Renamed"   : "➜ ",
     \ "Unmerged"  : "═ ",
     \ "Deleted"   : "✖ ",

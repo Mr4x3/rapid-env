@@ -56,7 +56,7 @@
       "%track% - %artist% - %title%", 
       "%track%. %year% - %title%", 
       " - %title%", 
-      "%track%. %artist% - %title%"
+      "%track%. %title%"
     ]
   }, 
   "&Replace": {

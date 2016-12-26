@@ -12,6 +12,9 @@ Plug 'mhinz/vim-startify'
 Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-titlecase'
 
+" Hard Time Dont Do It For Starter
+Plug 'takac/vim-hardtime'
+
 " Commenter
 Plug 'scrooloose/nerdcommenter'
 
