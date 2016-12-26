@@ -56,6 +56,7 @@ alias ..='cd ..'
 alias dev='cd ~/Documents/'
 alias l='ls -CF'
 alias vim='nvim'
+alias v='nvim'
 
 # VENV Wrapper
 export WORKON_HOME=$HOME/.virtualenvs
