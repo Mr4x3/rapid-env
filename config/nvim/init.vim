@@ -11,6 +11,9 @@ nmap <leader>gT <Plug>Titlecase
 vmap <leader>gT <Plug>Titlecase
 nmap <leader>gt <Plug>TitlecaseLine
 
+" Copy Paste ReDefined
+nnoremap <C-S-c> "+y<cr>
+nnoremap <C-S-v> "+p<cr>
 
 " CtrlP Configurations
 let g:ctrlp_map = '<c-p>'
@@ -102,11 +105,11 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Staged"    : "✚ ",
     \ "Untracked" : "✭",
     \ "Renamed"   : "➜ ",
-    \ "Unmerged"  : "═ ",
+    \ "Unmerged"  : "═",
     \ "Deleted"   : "✖ ",
     \ "Dirty"     : "✗ ",
     \ "Clean"     : "✔︎ ",
-    \ "Unknown"   : "? "
+    \ "Unknown"   : "?"
     \ }
 " }}}
 

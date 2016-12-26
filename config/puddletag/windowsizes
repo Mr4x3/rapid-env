@@ -1,5 +1,5 @@
 [General]
-mainwin=@ByteArray(\x1\xd9\xd0\xcb\0\x1\0\0\0\0\x2\xb5\0\0\0\n\0\0\x5]\0\0\x3\a\0\0\x2\xbd\0\0\0'\0\0\x5U\0\0\x2\xff\0\0\0\0\0\0)
+mainwin=@ByteArray(\x1\xd9\xd0\xcb\0\x1\0\0\0\0\0\x1d\0\0\0\n\0\0\x5]\0\0\x3&\0\0\0%\0\0\0'\0\0\x5U\0\0\x3\x1e\0\0\0\0\0\0)
 settingswin=@ByteArray(\x1\xd9\xd0\xcb\0\x1\0\0\0\0\x2\x18\0\0\0\n\0\0\x5\x15\0\0\x3\a\0\0\x2 \0\0\0'\0\0\x5\r\0\0\x2\xff\0\0\0\0\0\0)
 edit_field="@ByteArray(\x1\xd9\xd0\xcb\0\x1\0\0\0\0\x2 \0\0\x1\x1d\0\0\x3\x45\0\0\x2v\0\0\x2(\0\0\x1:\0\0\x3=\0\0\x2n\0\0\0\0\0\0)"
 extendedtags=@ByteArray(\x1\xd9\xd0\xcb\0\x1\0\0\0\0\0\x18\0\0\0\n\0\0\x2\xc2\0\0\x3\a\0\0\0 \0\0\0'\0\0\x2\xba\0\0\x2\xff\0\0\0\0\0\0)
