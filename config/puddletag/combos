@@ -56,6 +56,9 @@
       "%track% - %artist% - %title%", 
       "%track%. %year% - %title%", 
       " - %title%", 
+      "%track%. %title%", 
+      "%track%. %artist% \u2013 %title%", 
+      "%artist% \u2013 %title%", 
       "%track%. %title%"
     ]
   }, 

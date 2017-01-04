@@ -33,10 +33,12 @@ cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Co
 # sudo apt install -y indicator-multiload indicator-cpufreq
 # Update System
 # sudo pip2 install --upgrade --force-reinstall neovim --user
+
+# PPA'S
+sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt -y update && sudo apt -y upgrade
 
 # Install Neo Vim
-sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get install neovim
 
 # Packages Install

@@ -3,6 +3,14 @@ source ~/.config/nvim/plugins.vim
 " Set a map leader for more key combos
 let mapleader = ','
 
+" UltiSnippet Configurations {{{
+"" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<C-s>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"
+" }}}
+
 " Mixed Configurations {{{
 
 " Title Case

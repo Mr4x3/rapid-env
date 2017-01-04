@@ -49,6 +49,7 @@ alias csu='python3 manage.py createsuperuser'
 alias run='python3 manage.py runserver 8888'
 alias mm='python3 manage.py makemigrations'
 alias migrate='python3 manage.py migrate'
+alias shell='python3 manage.py shell'
 
 # Other Alias
 alias top='top -o cpu'
