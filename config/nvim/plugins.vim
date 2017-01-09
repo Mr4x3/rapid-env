@@ -5,9 +5,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'joshdick/onedark.vim'
 
 
-
 " Mr.4x3 New
-
+Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify'
 Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-titlecase'

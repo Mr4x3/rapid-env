@@ -36,13 +36,12 @@ cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Co
 
 # PPA'S
 sudo add-apt-repository ppa:neovim-ppa/unstable
+# Update And Upgrade
 sudo apt -y update && sudo apt -y upgrade
 
-# Install Neo Vim
-sudo apt-get install neovim
-
 # Packages Install
-sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox exuberant-ctags build-essential cmake python-dev
+sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox
+exuberant-ctags build-essential cmake python-dev sshpass, neovim
 
 # Update Pip
 sudo pip3 install --upgrade pip
