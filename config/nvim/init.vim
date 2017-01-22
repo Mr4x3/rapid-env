@@ -3,6 +3,12 @@ source ~/.config/nvim/plugins.vim
 " Set a map leader for more key combos
 let mapleader = ','
 
+
+" SET Modes {{{
+set relativenumber
+" }}}
+
+
 " Indent Line Configuration {{{
 let g:indentLine_enabled = 1
 
@@ -73,7 +79,7 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 let g:pymode_rope_goto_definition_bind = "<C-A-g>"
 let g:pymode_lint_maxlinelength = 119
 let g:pymode_folding = 1
-let g:pymode_lint_ignore="E501"
+let g:pymode_lint_ignore="E501,W0611"
 " let g:pymode_lint_ignore = "E125,E126,E127,E128,E201,E202,E225,E226,E227,E228,E231,E301,E302,E501,E502"
 " }}}
 

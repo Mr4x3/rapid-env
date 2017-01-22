@@ -3,3 +3,5 @@ django
 djangorestframework
 PyMySQL
 # New Modules
+pep8
+flake8

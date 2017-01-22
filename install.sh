@@ -40,8 +40,7 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt -y update && sudo apt -y upgrade
 
 # Packages Install
-sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox
-exuberant-ctags build-essential cmake python-dev sshpass, neovim
+sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox exuberant-ctags build-essential cmake python-dev sshpass neovim thunar puddletag audacious pdfmod gimp ubuntu-restricted-extras xfca soundconverter pepperflashplugin-nonfree adobe-flashplugin
 
 # Update Pip
 sudo pip3 install --upgrade pip
