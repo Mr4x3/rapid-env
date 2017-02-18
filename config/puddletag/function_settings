@@ -51,7 +51,7 @@
       "just nothing to do with this"
     ], 
     "arguments": [
-      "%track%. %title%"
+      "%xtrack%-%title%"
     ]
   }, 
   "puddlestuff.functions_titleCase": {

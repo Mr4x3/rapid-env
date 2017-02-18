@@ -41,6 +41,11 @@ sudo apt -y update && sudo apt -y upgrade
 
 # Packages Install
 sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox exuberant-ctags build-essential cmake python-dev sshpass neovim thunar puddletag audacious pdfmod gimp ubuntu-restricted-extras xfca soundconverter pepperflashplugin-nonfree adobe-flashplugin nodejs-legacy npm aria2 ipython
+sudo apt-get install fonts-powerline
+
+# Android Stuff
+sudo apt-get install libc6:i386 libstdc++6:i386
+sudo apt-get install zlib1g:i386
 
 # Update Pip
 sudo pip3 install --upgrade pip

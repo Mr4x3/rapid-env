@@ -60,6 +60,10 @@ alias vim='nvim'
 alias v='nvim'
 alias v.='nvim .'
 
+# Exports Environments
+export ANDROID_HOME=$HOME/.Android
+export PATH=${PATH}:$HOME/.Android/platform-tools:$HOME/.Android/tools:$HOME/.Android/build-tools/25.0.2/
+
 # VENV Wrapper
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Documents/django-projects/

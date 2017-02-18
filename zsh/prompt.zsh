@@ -66,5 +66,23 @@ precmd() {
     print -P '\n%F{51}%~'
 }
 
-export PROMPT='%(?.%F{205}.%F{red})⇨%f '
-export RPROMPT='`git_dirty`%F{241}$vcs_info_msg_0_%f `git_arrows``suspended_jobs`'
+# For Showing Virtual Env
+virtualenv_info (){
+    # Get Virtual Env
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        # Strip out the path and just leave the env name
+        venv="${VIRTUAL_ENV##*/}"
+    else
+        # In case you don't have one activated
+        venv='Default | Environment'
+    fi
+    [[ -n "$venv" ]] && echo "$venv"
+}
+
+# Disable Virtual Env Prompt
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+export PROMPT="%(?.%F{magenta}.%F{red})[\$(virtualenv_info)]❯%f " # Display a red prompt char on failure
+# export PROMPT='%(?.%F{205}.%F{red})❯%f '
+# export RPROMPT='`git_dirty`%F{241}$vcs_info_msg_0_%f `git_arrows``suspended_jobs`'
+export RPROMPT='%{$terminfo[cuu1]$terminfo[cuf1]%}%{$(echotc DO 1)%}`git_dirty`%F{241}$vcs_info_msg_0_%f `git_arrows``suspended_jobs`'

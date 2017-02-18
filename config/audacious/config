@@ -13,7 +13,12 @@ item0_pos=-1,0,0,296,196
 item_count=1
 
 [skins]
-player_x=37
+equalizer_x=168
+equalizer_y=262
+player_x=185
+player_y=146
+playlist_x=443
+playlist_y=146
 scope_mode=2
 skin=/usr/share/audacious/Skins/Classic
 vis_type=1
