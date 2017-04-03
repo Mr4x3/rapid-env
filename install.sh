@@ -49,4 +49,4 @@ sudo apt-get install zlib1g:i386
 
 # Update Pip
 sudo pip3 install --upgrade pip
-sudo pip install virtualenvwrapper
+sudo pip3 install virtualenvwrapper neovim

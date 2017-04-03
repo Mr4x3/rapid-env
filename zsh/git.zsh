@@ -1,8 +1,9 @@
 # git aliases
 alias ga='git add'
 alias gb='git branch'
-alias gl='git pull'
+alias gl='git lg'
 alias gp='git push'
+alias gf='git fetch && git rebase'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gs='git status'
