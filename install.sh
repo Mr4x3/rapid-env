@@ -14,6 +14,8 @@ ln -s "$PWD/config/audacious/" ~/.config/
 ln -s "$PWD/config/puddletag/" ~/.config/
 ln -s "$PWD/config/transmission/" ~/.config/
 ln -s "$PWD/gitconfig" ~/.gitconfig
+ln -s "$PWD/zsh/zshrc" ~/.zshrc
+ln -s "$PWD/tmux/tmux.conf" ~/.tmux.conf
 
 # For N Vim Icons
 mkdir -p ~/.local/share/fonts
@@ -40,9 +42,10 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt -y update && sudo apt -y upgrade
 
 # Packages Install
-sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox exuberant-ctags build-essential cmake python-dev sshpass neovim thunar puddletag audacious pdfmod gimp ubuntu-restricted-extras xfca soundconverter pepperflashplugin-nonfree adobe-flashplugin nodejs-legacy npm aria2 ipython
-sudo apt-get install fonts-powerline
-
+sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox exuberant-ctags build-essential cmake python-dev sshpass neovim thunar puddletag audacious pdfmod gimp ubuntu-restricted-extras soundconverter pepperflashplugin-nonfree nodejs-legacy npm aria2 ipython gdebi redshift zsh vlc 
+sudo apt-get install -y fonts-powerline
+sudo chsh -s /bin/zsh
+curl -sL --proto-redir -all,https https://zplug.sh/installer | zsh
 # Android Stuff
 sudo apt-get install libc6:i386 libstdc++6:i386
 sudo apt-get install zlib1g:i386
