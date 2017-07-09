@@ -22,17 +22,15 @@
       "just nothing to do with this"
     ], 
     "arguments": [
-      "%artist% - %title%"
+      "%artist%  - %title% %track%"
     ]
   }, 
   "puddlestuff.functions_autonumbering": {
-    "fields": [
-      "track"
-    ], 
+    "fields": [], 
     "arguments": [
       1, 
       true, 
-      4
+      2
     ]
   }, 
   "puddlestuff.functions_replace": {
@@ -51,7 +49,7 @@
       "just nothing to do with this"
     ], 
     "arguments": [
-      "%track%. %artist% - %title%"
+      "%track%_%title%"
     ]
   }, 
   "puddlestuff.functions_titleCase": {

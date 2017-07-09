@@ -61,7 +61,8 @@
       "%artist% \u2013 %title%", 
       "%title%", 
       "%xtrack%-%title%", 
-      "%track%. %artist% - %title%"
+      "%track%_%title%", 
+      "%artist%  - %title% %track%"
     ]
   }, 
   "&Replace": {

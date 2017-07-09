@@ -10,7 +10,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-# history
+# History
 setopt HIST_VERIFY
 setopt EXTENDED_HISTORY
 setopt HIST_REDUCE_BLANKS
@@ -21,7 +21,7 @@ setopt APPEND_HISTORY
 
 setopt COMPLETE_ALIASES
 
-# make terminal command navigation sane again
+# Make Terminal Command Navigation Sane Again
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word
 bindkey '^[[5D' beginning-of-line

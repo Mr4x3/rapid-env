@@ -1,6 +1,6 @@
 
 [audgui]
-info_win=411,235,544,297
+info_win=411,235,555,374
 
 [gtkui]
 column_widths=10,275,175,10,175,175,10,100,29,10,275,275,275,10
@@ -13,12 +13,12 @@ item0_pos=-1,0,0,296,196
 item_count=1
 
 [skins]
-equalizer_x=168
-equalizer_y=262
-player_x=185
-player_y=146
-playlist_x=443
-playlist_y=146
+equalizer_x=186
+equalizer_y=302
+player_x=203
+player_y=186
+playlist_x=461
+playlist_y=186
 scope_mode=2
 skin=/usr/share/audacious/Skins/Classic
 vis_type=1

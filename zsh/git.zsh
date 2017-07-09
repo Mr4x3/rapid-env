@@ -1,4 +1,4 @@
-# git aliases
+# Git Aliases
 alias ga='git add'
 alias gb='git branch'
 alias gl='git lg'
@@ -18,8 +18,8 @@ alias glog="git log"
 alias git-undo='git reset --soft HEAD~1'
 alias git-count='git shortlog -sn'
 alias git-undopush="git push -f origin HEAD^:master"
-alias cpbr="git rev-parse --abbrev-ref HEAD | pbcopy"
-# git root
+
+# Git Root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
 alias sub-pull='git submodule foreach git pull origin master'
@@ -28,8 +28,8 @@ function give-credit() {
     git commit --amend --author $1 <$2> -C HEAD
 }
 
-# a simple git rename file function
-# git does not track case-sensitive changes to a filename.
+# A Simple Git Rename File Function
+# Git Does Not Track Case-Sensitive Changes To A Filename.
 function git-rename() {
     git mv $1 "${2}-"
     git mv "${2}-" $2
