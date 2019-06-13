@@ -1,5 +1,15 @@
 
+[audacious]
+equalizer_bands=-4.32,-0.96,0,9.12,0.96,-0.96,0,-8.16,-5.76,3.36
+equalizer_preamp=-1.44
+record=FALSE
+repeat=TRUE
+
 [audgui]
+about_win=383,18,591,418
+equalizer_win=650,300,288,288
+filebrowser_win=435,143,700,450
+filesel_path=/home/tron/Downloads/TorrentDownload
 info_win=411,235,555,374
 
 [gtkui]
@@ -13,12 +23,14 @@ item0_pos=-1,0,0,296,196
 item_count=1
 
 [skins]
-equalizer_x=186
-equalizer_y=302
-player_x=203
-player_y=186
-playlist_x=461
-playlist_y=186
+equalizer_x=91
+equalizer_y=441
+player_x=108
+player_y=325
+playlist_height=261
+playlist_width=575
+playlist_x=366
+playlist_y=325
 scope_mode=2
 skin=/usr/share/audacious/Skins/Classic
 vis_type=1

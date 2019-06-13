@@ -6,6 +6,9 @@ setopt LOCAL_TRAPS
 #setopt IGNORE_EOF
 setopt PROMPT_SUBST
 
+# Prompt Use Vim Style Bindings
+bindkey -v
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000

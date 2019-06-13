@@ -22,14 +22,16 @@
       "just nothing to do with this"
     ], 
     "arguments": [
-      "%artist%  - %title% %track%"
+      "%artist% - %title%"
     ]
   }, 
   "puddlestuff.functions_autonumbering": {
-    "fields": [], 
+    "fields": [
+      "track"
+    ], 
     "arguments": [
       1, 
-      true, 
+      false, 
       2
     ]
   }, 
@@ -49,7 +51,7 @@
       "just nothing to do with this"
     ], 
     "arguments": [
-      "%track%_%title%"
+      "%track%. %gener%"
     ]
   }, 
   "puddlestuff.functions_titleCase": {
@@ -59,7 +61,7 @@
     ], 
     "arguments": [
       "Mixed Case", 
-      "., !("
+      "., !"
     ]
   }
 }

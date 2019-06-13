@@ -53,12 +53,12 @@ alias shell='python3 manage.py shell'
 
 # Other Alias
 alias top='top -o cpu'
-alias ..='cd ..'
 alias dev='cd ~/Documents/'
 alias l='ls -CF'
 alias vim='nvim'
 alias v='nvim'
 alias v.='nvim .'
+set -o vi
 
 # Exports Environments
 export ANDROID_HOME=$HOME/.Android

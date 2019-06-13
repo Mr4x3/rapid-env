@@ -4,6 +4,7 @@
 #------------------------------------------------------------------------------#
 #------------------------------------------------------------------------------#
 
+sudo apt install curl git
 rm ~/.bashrc
 # Present Directry
 # May Use $PWD For Back Use $OLDPWD
@@ -16,6 +17,7 @@ ln -s "$PWD/config/transmission/" ~/.config/
 ln -s "$PWD/gitconfig" ~/.gitconfig
 ln -s "$PWD/zsh/zshrc" ~/.zshrc
 ln -s "$PWD/tmux/tmux.conf" ~/.tmux.conf
+ln -s "$PWD/config/ssh" ~/.ssh
 
 # For N Vim Icons
 mkdir -p ~/.local/share/fonts
@@ -42,7 +44,7 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt -y update && sudo apt -y upgrade
 
 # Packages Install
-sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox exuberant-ctags build-essential cmake python-dev sshpass neovim thunar puddletag audacious pdfmod gimp ubuntu-restricted-extras soundconverter pepperflashplugin-nonfree aria2 ipython gdebi redshift zsh vlc 
+sudo apt install -y ssh python3-pip htop chromium-browser glances tree ranger xclip aptitude tmux mysql-server dtrx whois tightvncserver nmap transmission-daemon vim-nox exuberant-ctags build-essential cmake python-dev sshpass neovim thunar puddletag audacious pdfmod gimp ubuntu-restricted-extras soundconverter pepperflashplugin-nonfree aria2 ipython gdebi redshift zsh vlc clipit libmysqlclient-dev
 sudo apt-get install -y fonts-powerline
 sudo chsh -s /bin/zsh
 curl -sL --proto-redir -all,https https://zplug.sh/installer | zsh

@@ -11,7 +11,7 @@ alias bpython='bpython3'
 # Linux Alias
 alias bye='sudo shutdown -h now'
 alias install='sudo apt -y install'
-alias remove='sudo apt -y remove'
+alias remove='sudo apt -y --purge remove'
 alias update='sudo apt -y update'
 alias upgrade='sudo apt -y update && sudo apt -y upgrade'
 alias clean='sudo apt-get autoclean && sudo apt-get autoremove'
@@ -35,6 +35,17 @@ alias dev='cd ~/Documents/django-projects'
 alias l='ls -CF'
 alias v='nvim'
 alias v.='nvim .'
+alias robo='~/robo_mongo/bin/robo3t'
+alias get_key='cat ~/.ssh/id_rsa.pub | xclip -sel clip'
+alias get_ip='curl -s icanhazip.com | xclip -sel clip'
+alias tasks='git log --pretty="* %s" --all --since="yesterday"'
+
+# AWS Buckets Sync
+alias sync_ela_site="aws s3 sync . s3://ela-test-site --exclude '*.pyc' --exclude '.git*' --exclude '.git/*' --exclude '.idea/*'"
+# alias sync_elawoman="aws s3 sync . s3://ela-website-code --exclude '*.pyc' --exclude '.git*' --exclude '.git/*' --exclude '.idea/*'"
+alias sync_elawoman="aws s3 sync . s3://ela-website-code --delete --exclude '*.pyc' --exclude '.git*' --exclude '.git/*' --exclude '.idea/*' && aws s3 sync static/ s3://cdn.elawoman.com/static/ --delete"
+alias sync_elacancer="aws s3 sync . s3://ela-cancer-web --exclude '*.pyc' --exclude '.git*' --exclude '.git/*' --exclude '.idea/*'"
+
 
 # Exports Environments
 export ANDROID_HOME=$HOME/.Android
@@ -45,8 +56,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Documents/django-projects/
 export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python'
 source /usr/local/bin/virtualenvwrapper.sh
-# alias mkproject='mkproject --python=/usr/bin/python3'
-
+alias mkproject='mkproject --python=/usr/bin/python3'
+alias gs='git status'
+alias gl='git log'
 ################Commands###################
 #cd ~/Documents
 
@@ -64,6 +76,8 @@ else # OS X `ls`
     colorflag="-G"
 fi
 
+alias tmux='tmux -u'
+
 # Filesystem Aliases
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -75,6 +89,14 @@ alias la="ls -AF ${colorflag}"
 alias ll="ls -lFh ${colorflag}"
 alias lld="ls -l | grep ^d"
 alias rmf="rm -rf"
+
+# SSH Machines
+alias s2="ssh ubuntu@s2.curd.io"
+alias s3="ssh ubuntu@s3.curd.io"
+alias s4="ssh ubuntu@s4.curd.io"
+alias s7="ssh s7"
+alias s8="ssh tron@s8.curd.io"
+alias s9="ssh tron@s9.curd.io"
 
 # Helpers
 alias grep='grep --color=auto'

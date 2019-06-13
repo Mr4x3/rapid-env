@@ -32,7 +32,8 @@
   "For &Mixed Case, after any of:": {
     "values": [
       "., !", 
-      "., !("
+      "., !(", 
+      "., !"
     ]
   }, 
   "filter_text": {
@@ -62,7 +63,14 @@
       "%title%", 
       "%xtrack%-%title%", 
       "%track%_%title%", 
-      "%artist%  - %title% %track%"
+      "%artist%  - %title% %track%", 
+      "%track% - %artist% @ ", 
+      "%track% - %title% @%track%", 
+      "%track% - %title%", 
+      "%artist% - %album% - %track% - %title%", 
+      "%track% %artist% - %title%", 
+      "%track% - %year%", 
+      "%track%. %gener%"
     ]
   }, 
   "&Replace": {

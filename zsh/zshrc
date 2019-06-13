@@ -29,7 +29,7 @@ fi
 autoload -U compinit add-zsh-hook
 compinit
 
-for config ($ZSH/**/*completion.sh) source $config
+# for config ($ZSH/**/*completion.sh) source $config
 
 export EDITOR='nvim'
 

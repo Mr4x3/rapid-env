@@ -19,11 +19,13 @@
     tags = tag -l
     branches = branch -a
     remotes = remote -v
+    merge-to = "!gitmergeto() { git push \"`git rev-parse --show-toplevel`\" `git rev-parse --abbrev-ref HEAD`:$1; } && gitmergeto"
 
     make-the-fucking-branch-point-at-the-fucking-commit = "!sh -c 'git checkout $1 && git reset --hard $2' -"
     root = rev-parse --show-toplevel
 
     graft = cherry-pick -x
+    s = status
 
     l   = log -18 --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
     ll  = log     --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
@@ -103,3 +105,5 @@
     excludesfile = .gitignore
     pager = cat
     editor = nvim
+[credential]
+	helper = cache

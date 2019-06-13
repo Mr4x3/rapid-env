@@ -1,0 +1,98 @@
+Host s1
+    HostName s1.curd.io
+    Port 22
+    User ubuntu
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+    ServerAliveInterval 60
+
+Host s3
+    HostName s3.curd.io
+    Port 22
+    User ubuntu
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+    ServerAliveInterval 60
+
+Host s7
+    HostName s7.curd.io
+    Port 22
+    User tron
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+    ServerAliveInterval 60
+
+Host s8
+    HostName s8.curd.io
+    Port 22
+    User tron
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+Host s10
+    HostName s10.curd.io
+    Port 22
+    User tron
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+
+Host s11
+    HostName s11.curd.io
+    Port 22
+    User tron
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+Host s12
+    HostName s12.curd.io
+    Port 22
+    User tron
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+Host elaapp
+    HostName app.elawoman.com
+    User ubuntu
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+    # PubkeyAuthentication no
+
+
+Host elawoman
+    HostName 54.241.250.160
+    User ubuntu
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+Host ela_site
+    HostName 13.232.139.216
+    User ubuntu
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+Host ela_crm
+    HostName crm.talentaim.com
+    User tron
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+Host ela_crm_test
+    HostName test.talentaim.com
+    User tron
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+Host 1.s.curd.io
+    Hostname 13.229.49.77
+    Port 80
+    User ubuntu
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+Host ela_prod_db
+    Hostname 35.154.227.192
+    Port 22
+    User ec2-user
+    IdentityFile  ~/.ssh/id_rsa
+    IdentitiesOnly yes

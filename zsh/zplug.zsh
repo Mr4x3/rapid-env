@@ -1,6 +1,6 @@
 #!/bin/sh
 
- Only Source Zplug On Initial Load
+# Only Source Zplug On Initial Load
 if [ -z ${RELOAD} ]; then
     if ! [ type "zplug" > /dev/null 2>&1 ]; then
         source ~/.zplug/init.zsh
